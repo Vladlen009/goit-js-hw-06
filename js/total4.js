@@ -27,4 +27,3 @@ increment.addEventListener('click', () => {
     value.textContent = +value.textContent + 1;
 } )
 
-

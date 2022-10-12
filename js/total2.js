@@ -6,25 +6,25 @@
 // // После чего вставит все <li> за одну операцию в список ul#ingredients.
 
 
-// const ingredients = [
-//     "Potatoes",
-//     "Mushrooms",
-//     "Garlic",
-//     "Tomatos",
-//     "Herbs",
-//     "Condiments",
-// ];
+const ingredients = [
+    "Potatoes",
+    "Mushrooms",
+    "Garlic",
+    "Tomatos",
+    "Herbs",
+    "Condiments",
+];
 
-// const list = document.querySelector('#ingredients') 
+const list = document.querySelector('#ingredients') 
 
 
-// function setListElement(array){
-//     for(let item of array){
-//         const li = document.createElement("li");
-//         li.textContent = item;
-//         li.classList.add('item');
-//         list.appendChild(li);
-//     }
-// }
+function setListElement(array){
+    for(let item of array){
+        const li = document.createElement("li");
+        li.textContent = item;
+        li.classList.add('item');
+        list.appendChild(li);
+    }
+}
 
-// setListElement(ingredients);
+setListElement(ingredients);
