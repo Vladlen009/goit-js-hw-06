@@ -26,6 +26,8 @@ const images = [
 
 const list = document.querySelector('.gallery');
 list.style.display = 'flex';
-for (const item of images){
- list.insertAdjacentHTML('afterbegin',`<li style = "margin-right: 10px"><img style ="width:200px; height:150px;" src=${item.url} alt=${item.alt} /></li>`); 
-}
+ list.insertAdjacentHTML('afterbegin',
+ `<li style = "margin-right: 10px"><img style ="width:200px; height:150px;" src=${images[0].url} alt=${images[0].alt} /></li>
+  <li style = "margin-right: 10px"><img style ="width:200px; height:150px;" src=${images[1].url} alt=${images[1].alt} /></li>
+  <li style = "margin-right: 10px"><img style ="width:200px; height:150px;" src=${images[2].url} alt=${images[2].alt} /></li>
+ `); 
